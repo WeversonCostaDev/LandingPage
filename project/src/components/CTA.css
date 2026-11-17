@@ -6,35 +6,35 @@
 
     padding: 12px 28px;
 
-    background-color: #2563eb;
-    border: 1px solid #2563eb;
+    background-color: var(--cta-fundo);
+    border: 1px solid var(--cta-fundo);
     border-radius: 8px;
 
-    color: #ffffff;
+    color: var(--cta-texto);
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
 
     cursor: pointer;
 
-    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 4px 10px color-mix(in srgb, var(--cta-fundo), transparent 80%);
 
     transition: all 0.25s ease;
 }
 
 .cta:hover {
-    background-color: #1d4ed8;
-    border-color: #1d4ed8;
-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+    background-color: var(--cta-hover);
+    border-color: var(--cta-hover);
+    box-shadow: 0 6px 16px color-mix(in srgb, var(--cta-hover), transparent 70%);
     transform: translateY(-2px);
 }
 
 .cta:active {
     transform: translateY(0);
-    box-shadow: 0 2px 5px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 2px 5px color-mix(in srgb, var(--cta-fundo), transparent 80%);
 }
 
 .cta:focus-visible {
-    outline: 3px solid rgba(37, 99, 235, 0.35);
+    outline: 3px solid color-mix(in srgb, var(--cta-hover), transparent 65%);
     outline-offset: 3px;
 }

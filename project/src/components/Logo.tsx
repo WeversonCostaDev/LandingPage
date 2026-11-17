@@ -5,6 +5,6 @@ interface LogoProps{
 
 export function Logo({src, alt}: LogoProps){
     return (
-        <img width="200px" src={src} alt={alt}/>
+        <img width={"50px"} src={src} alt={alt}/>
     );
 }
