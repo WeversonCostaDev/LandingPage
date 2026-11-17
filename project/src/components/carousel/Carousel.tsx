@@ -1,5 +1,5 @@
-import { ObjectCard } from "../object/object";
-import type {IObjectProps} from "../object/object"
+import { ObjectCard } from "../object/ObjectCard";
+import type {IObjectProps} from "../object/ObjectCard"
 
 interface ICarousel{
     objects: Array<IObjectProps>
