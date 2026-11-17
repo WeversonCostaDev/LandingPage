@@ -1,5 +1,4 @@
-import { Carousel } from "./carousel/carousel";
-
+import { Carousel } from "./carousel/Carousel";
 interface IMainProps{
     children?: React.ReactNode;
 }
