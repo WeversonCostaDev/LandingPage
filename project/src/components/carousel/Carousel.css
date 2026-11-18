@@ -1,0 +1,43 @@
+.carousel {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+}
+
+.swiper-slide {
+    width: 260px;
+    height: auto;
+}
+.swiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    width: fit-content;
+    height: auto;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+}
+
+@media (max-width: 479px) {
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.carousel {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+

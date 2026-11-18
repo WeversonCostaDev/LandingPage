@@ -1,11 +1,11 @@
-import {Logo} from "./Logo.tsx";
-import {CTA} from "./CTA.tsx";
-import {Navigation} from "./Navigation.tsx";
-import type { Cores } from "../types/Cores.ts";
+import {Logo} from "../Logo.tsx";
+import {CTA} from "../CTA/CTA.tsx";
+import {Navigation} from "../navigation/Navigation.tsx";
+import type { Cores } from "../../types/Cores.ts";
 import type { CSSProperties } from "react";
 import "./Header.css";
 
-import logoImagem from "../assets/imagens/logo.png";
+import logoImagem from "../../assets/imagens/logo.png";
 
 interface HeaderProps{
     children?: React.ReactNode;

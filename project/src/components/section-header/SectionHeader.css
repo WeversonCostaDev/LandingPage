@@ -1,0 +1,52 @@
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.section-header_label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-header h2 {
+    margin: 0;
+
+    color: #1e293b;
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.section-header p {
+    max-width: 550px;
+    margin: 0;
+
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.section-header::after {
+    content: "";
+    width: 48px;
+    height: 4px;
+    margin-top: 4px;
+
+    background-color: #2563eb;
+    border-radius: 10px;
+}
+
+.section-header_label svg {
+    font-size: 16px;
+}
