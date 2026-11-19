@@ -1,7 +1,7 @@
 import {Logo} from "../Logo.tsx";
 import {CTA} from "../CTA/CTA.tsx";
 import {Navigation} from "../navigation/Navigation.tsx";
-import type { Cores } from "../../types/Cores.ts";
+import type { Cores } from "../../types/Types.ts";
 import type { CSSProperties } from "react";
 import "./Header.css";
 
@@ -37,10 +37,9 @@ export function Header({children, cores, titulo, subtitulo}: HeaderProps){
                     <Navigation
                         links={[
                             {label: "sobre", to: "/about"},
-                            {label: "contato", to: "contact"},
+                            {label: "contato", to: "/contact"},
                         ]}
                         cores={{
-                            corFundo: "#ffffff",
                             corHover: "#2563eb",
                             corTexto: "#334155",
                         }}

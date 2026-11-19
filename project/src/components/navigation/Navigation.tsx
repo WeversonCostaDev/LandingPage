@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import type { Cores } from "../../types/Cores";
+import type { Cores } from "../../types/Types";
 import type { CSSProperties } from "react";
+import "./Navigation.css";
 
 interface INavigationLink{
     label: string;
@@ -23,7 +24,7 @@ export function Navigation({links, cores=null, modo= "router", className}: INavi
     } as CSSProperties;
 
     return (
-        <nav className={className} style={coresCss}>
+        <nav className={`nav ${className ?? ""}`} style={coresCss}>
             <ul>
                 {
                     links.map(link =>( 

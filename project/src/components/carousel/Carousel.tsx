@@ -8,9 +8,6 @@ import { ObjectCard } from "../object/ObjectCard";
 import { SectionHeader } from "../section-header/SectionHeader";
 import type {IObjectProps} from "../object/ObjectCard"
 
-
-import imagemCamisa from "../../assets/imagens/camisa.jpg";
-
 interface ICarousel{
     objects: Array<IObjectProps>
 }
@@ -53,11 +50,11 @@ export function Carousel({objects}: ICarousel){
                 {objects.map(obj => (
                     <SwiperSlide key={obj.id} >
                         <ObjectCard
-                            id={1}
-                            nome="camisa"
-                            imagem={imagemCamisa}
-                            descricao="imagem de uma camisa"
-                            data="17/08/2026"
+                            id={obj.id}
+                            nome={obj.nome}
+                            imagem={obj.imagem}
+                            descricao={obj.descricao}
+                            data={obj.data}
                         />
  
                     </SwiperSlide>

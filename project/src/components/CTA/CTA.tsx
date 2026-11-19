@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { CSSProperties } from "react";
-import type { Cores } from "../../types/Cores";
+import type { Cores } from "../../types/Types";
 import "./CTA.css";
 
 

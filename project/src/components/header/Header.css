@@ -92,21 +92,12 @@
     }
 }
 
-.navigation{
-    --nav-fundo: #ffffff;
-    --nav-texto: #475569;
-    --nav-hover: #2563eb;
-}
 
 
 .navigation ul {
     display: flex;
     align-items: center;
     gap: 36px;
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .navigation a {
@@ -114,7 +105,6 @@
     display: inline-block;
 
     color: var(--nav-texto);
-    text-decoration: none;
     font-size: 18px;
     font-weight: 600;
 

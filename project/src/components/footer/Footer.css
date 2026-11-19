@@ -1,9 +1,19 @@
 
 .footer {
+    --footer-background: #ffffff;
+    --footer-title: #1e293b;
+    --footer-text: #475569;
+    --footer-text-secondary: #94a3b8;
+    --footer-primary: #3b82f6;
+    --footer-primary-hover: #2563eb;
+    --footer-border: #e2e8f0;
+}
+
+.footer {
     width: 100%;
     padding: 50px 6% 20px;
-    background-color: #0f172a;
-    color: #f8fafc;
+    background-color: var(--footer-background);
+    color: var(--footer-title);
     box-sizing: border-box;
 }
 
@@ -30,13 +40,13 @@
 }
 
 .footer-logo svg {
-    color: #60a5fa;
+    color: var(--footer-logo);
     font-size: 24px;
 }
 
 .footer-brand p {
     margin: 16px 0 0;
-    color: #94a3b8;
+    color: var(--footer-text);
     font-size: 14px;
     line-height: 1.7;
 }
@@ -49,16 +59,16 @@
 }
 
 /* Navegação e ajuda */
-.footer-navigation_links,
-.footer-help_links {
+.footer-navigation,
+.footer-help {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 /* Listas de links */
-.footer-navigation_links ul,
-.footer-help_links ul {
+.footer-navigation ul,
+.footer-help ul {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -69,14 +79,14 @@
 
 /* Links */
 .footer a {
-    color: #94a3b8;
+    color: var(--footer-text);
     font-size: 14px;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .footer a:hover {
-    color: #60a5fa;
+    color: var(--footer-hover);
 }
 
 /* Rodapé inferior */
@@ -88,12 +98,12 @@
     max-width: 1400px;
     margin: 45px auto 0;
     padding-top: 20px;
-    border-top: 1px solid #334155;
+    border-top: 1px solid var(--footer-border);
 }
 
 .footer-bottom p {
     margin: 0;
-    color: #64748b;
+    color: var();
     font-size: 13px;
 }
 

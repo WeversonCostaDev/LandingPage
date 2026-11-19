@@ -1,0 +1,25 @@
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav a {
+    color: var(--nav-texto, inherit);
+    background-color: var(--nav-fundo, transparent);
+
+    font: inherit;
+    text-decoration: none;
+
+    transition: color 0.25s ease,
+                background-color 0.25s ease;
+}
+
+.nav a:hover {
+    color: var(--nav-hover, inherit);
+}
+
+.nav a:focus-visible {
+    outline: 2px solid var(--nav-hover, currentColor);
+    outline-offset: 4px;
+}

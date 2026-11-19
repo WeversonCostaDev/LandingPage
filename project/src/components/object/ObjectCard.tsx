@@ -8,15 +8,15 @@ export interface IObjectProps{
     data: string;
 }
 
-export function ObjectCard({id, nome, imagem, descricao, data}:IObjectProps){
+export function ObjectCard(object :IObjectProps){
     return(
         <article className="object-card">
-            <img src={imagem} alt={nome} />
+            <img src={object.imagem} alt={object.nome} />
 
             <div className="object-card_info">
-                <h3>{nome}</h3>
-                <span>{data}</span>
-                <p>{descricao}</p>
+                <h3>{object.nome}</h3>
+                <span>{object.data}</span>
+                <p>{object.descricao}</p>
             </div>
         </article>
     );
