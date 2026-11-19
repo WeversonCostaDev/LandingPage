@@ -1,6 +1,6 @@
 import {Header} from "./header/Header.tsx"
 import {Footer} from "./Footer.tsx";
-import {Main} from "./Main.tsx";
+import {Main} from "./main/Main.tsx";
 export function MainLayout(){
     return(
         <>

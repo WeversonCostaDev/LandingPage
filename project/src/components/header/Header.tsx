@@ -30,6 +30,7 @@ export function Header({children, cores, titulo, subtitulo}: HeaderProps){
                 <Logo
                     src={logoImagem}
                     alt={"imagem da logo"}
+                    className="logo"
                 />
                 
                 <div className="header-actions">
@@ -43,6 +44,8 @@ export function Header({children, cores, titulo, subtitulo}: HeaderProps){
                             corHover: "#2563eb",
                             corTexto: "#334155",
                         }}
+                        modo="router"
+                        className="navigation"
                     />
                     <CTA
                         texto="Conheça nosso site"

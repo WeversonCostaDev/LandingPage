@@ -1,10 +1,23 @@
-interface LogoProps{
+
+interface ILogoProps {
     src: string;
     alt: string;
+    width?: string;
+    className?: string;
 }
 
-export function Logo({src, alt}: LogoProps){
+export function Logo({
+    src,
+    alt,
+    width = "50px",
+    className
+}: ILogoProps) {
     return (
-        <img width={"50px"} src={src} alt={alt}/>
+        <img
+            src={src}
+            alt={alt}
+            width={width}
+            className={`logo ${className?? ""}`}
+        />
     );
 }

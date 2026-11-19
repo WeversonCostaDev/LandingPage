@@ -1,0 +1,143 @@
+
+.footer {
+    width: 100%;
+    padding: 50px 6% 20px;
+    background-color: #0f172a;
+    color: #f8fafc;
+    box-sizing: border-box;
+}
+
+/* Conteúdo principal */
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Identidade */
+.footer-brand {
+    max-width: 350px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-logo svg {
+    color: #60a5fa;
+    font-size: 24px;
+}
+
+.footer-brand p {
+    margin: 16px 0 0;
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Títulos das colunas */
+.footer-content h3 {
+    margin: 0 0 18px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Navegação e ajuda */
+.footer-navigation_links,
+.footer-help_links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Listas de links */
+.footer-navigation_links ul,
+.footer-help_links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Links */
+.footer a {
+    color: #94a3b8;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: #60a5fa;
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 45px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.footer-bottom a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-bottom svg {
+    font-size: 12px;
+}
+
+/* Tablets */
+@media (max-width: 720px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        max-width: 450px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 400px) {
+    .footer {
+        padding: 40px 6% 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+}
